@@ -1,0 +1,35 @@
+/* Thus the first number if positive will be to the right if negative to the left,
+while if the middle number is positive it will below while if negative it will be towards the top, 
+while the third number is for the spread(like the more the lighter the shadow ) */
+
+/* h1{
+    text-shadow: 0px 5px 0px grey;
+}  this will make the shadow appear below text*/
+
+/* h1{
+    text-shadow: 0px -5px 0px grey;
+} this will make shadow appear below text */
+/* 
+h1{
+    text-shadow: 5px 5px 0px grey;
+}  */
+
+/* h1{
+    text-shadow: 0px 0px 5px yellow , 0px -5px 5px red;
+} This will make the text look like there is fire  */
+
+/* h1{
+    text-shadow: 0px 0px 5px yellow , 0px -5px 5px red;
+    box-shadow: 5px 5px 5px black;
+} will introduce box shadows in towards the bottom right of the h1 element */
+
+h1{
+    text-shadow: 0px 0px 5px yellow , 0px -5px 5px red;
+    
+}
+
+h1:hover{
+    box-shadow: 5px 5px 5px black;
+}
+
+/* The combination above will make the box shadow appear after hovering over the h1 element */

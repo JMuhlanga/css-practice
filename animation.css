@@ -1,0 +1,229 @@
+/* 
+
+First iteration of the animation before introduction of iteration
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;
+
+    animation: mySlide;
+    animation-duration: 5s;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+} 
+
+*/
+
+/* 
+After introduction of iteration 
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;
+
+    animation: mySlide;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+} 
+
+*/
+
+/* 
+
+Introduction of play state 
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;
+
+    animation: mySlide;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}  
+
+*/
+
+/* 
+
+Introduction of an animation delay of 1s 
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;
+
+    animation: mySlide;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 5s;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}  
+
+*/
+
+/* 
+
+Introduction of animation timing functions such as ease-in and ease-out and also ease, alongside linear 
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;
+
+    animation: mySlide;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function:linear ;
+    animation-duration: 5s;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}   
+
+*/
+/* 
+
+Introduction of a short-cut that can be used to combine all siz properties (duration , timing function, delay, iteration count, play state, animation from custom func)
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;
+
+    
+
+    animation: 3s linear 0s infinite running mySlide;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}   
+
+*/
+
+/*
+
+When mouse hovers over the box, it begins moving 
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;     
+}
+
+#box1:hover{
+    animation: 3s linear 0s infinite running mySlide;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}   
+
+*/
+
+
+/* 
+
+When clicked the box begins to move
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;     
+}
+
+#box1:active{
+    animation: 3s linear 0s infinite running mySlide;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+} 
+
+*/
+
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 200px;
+    text-align: center;     
+}
+
+#box1:hover{
+    animation: 3s linear 0s infinite running myScale;
+}
+
+#box1:active{
+    animation: 3s linear 0s infinite running myColorChange;
+}
+
+@keyframes mySlide{
+    from{margin-left: 0%;}
+    to{margin-left: 1000%;}
+} 
+
+@keyframes myRotate{
+    100%{transform: rotateX(360deg);}
+}
+
+@keyframes myOpacity {
+    50%{opacity: 0;}
+}
+
+@keyframes myScale {
+    50%{transform: scale(0.5, 0.5);}
+}
+
+@keyframes myColorChange {
+    
+    20%{background-color: Orange;}
+    40%{background-color: red;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
